@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 1280px;
+    margin: auto;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#movies{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#movies h2{
+    font-size: 32px;
+    grid-column: 1/ span 3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+.swiper h2{
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px 30px 10px;
+}
+.hide{
+    visibility: hidden;
+}
+.individualMovie{
+    display: grid;
+    justify-items: center;
+}
+.individualMovie img{
+    width: 300px;
+}
+.individualMovie h3{
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.individualMovie p{
+    padding: 0px 10px 10px 10px;
+}
+.swiper-slide img{
+    float: left;
+    margin: 0px 50px;
+    width: 600px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide h3, .swiper-slide p{
+    padding-bottom: 30px;
+}
+
+.swiper-slide p{
+    padding-right: 50px;
+}
+.swiper-slide h3{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#tabs-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#tabs-3 h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    grid-column: 1 / span 2;
+
+}
+.required{
+    color: red;
+}
+.message{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.errorInput{
+    border: 3px solid red;
+    font-weight: bold;
+}
+form{
+    padding-top: 30px;
+    display: grid;
+    width: 500px;
+    margin: auto;
+}
+aside{
+    padding-top: 35px;
+}
+label, span, input, textarea{
+    padding: 5px 0px;
+}
+
+aside ol{
+    padding-top: 30px;
+}
+aside ol li{
+    padding-top: 5px;
+}
